@@ -3,7 +3,7 @@
  *
  *  Created on: Oct 23, 2021
  *      Author: Kyrillos
- * TODO Description: note down description
+ * Description: Mini_Project4
  */
 
 
@@ -17,6 +17,8 @@
 #include "ultrasonic.h"
 #include <avr/io.h>
 #include <avr/interrupt.h>
+
+/*Deceleration and initialization of global variables */
 char buffer[20]={0};
 int main(){
 	/*	setup section	*/
@@ -34,10 +36,12 @@ int main(){
 		Ultrasonic_Trigger();
 		distance=Ultrasonic_readDistance();
 		/*
-		 * the following line to solve approximation to sonic speed value
-		 * to just 342.2m/s only so the final result to real one not perfect so always
-		 * the final result less than real with few fractions which neglected but integer
-		 * so i round it up by adding 1
+		 * the following line to :
+		 * 1- convert integer to string .
+		 * 2- distance+1 to solve approximation effect about sonic speed value
+		 * 	  to just 342.2m/s only so the final result to real one not perfect so always
+		 *    the final result less than real with few fractions which neglected but integer
+		 *    so i round it up by adding 1
 		 * */
 		itoa(distance+1,buffer,10);
 

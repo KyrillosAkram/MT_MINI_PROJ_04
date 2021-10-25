@@ -1,15 +1,15 @@
-# Welcome to MiniProject03!
+# Welcome to MiniProject04!
 This project just implementation 
 
 # Project architecture
 
     ├─ protues_simulation					( visual simulation directory			)
-    │   └─ mini_project_03.pdsprj				( require proteus 8          			)
+    │   └─ mini_project_04.pdsprj				( require proteus 8          			)
     └─ workspace 						( elcipse workspace directory			)
-		└─ MiniProject3 				( elcipse project directory  			)
+		└─ MiniProject4 				( elcipse project directory  			)
 			├─ Debug				( project debuging binary directory		)
-			│  ├─ MiniProject3.elf 			( binary for debuging        			)
-			│  └─ MiniProject3.hex 			( just binary                			)
+			│  ├─ MiniProject4.elf 			( binary for debuging        			)
+			│  └─ MiniProject4.hex 			( just binary                			)
 			├─ main.c 				( Application code and the entry point		)
 			├─ std_types.h
 			├─ common_macros.h
