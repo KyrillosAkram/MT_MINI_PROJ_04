@@ -1,5 +1,5 @@
 # Welcome to MiniProject04!
-This project just implementation 
+This just implementation project
 
 # Project architecture
 
